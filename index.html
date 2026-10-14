@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="sem-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delícias da Flavi | Confeitaria e açaí em Contagem</title>
+    <meta name="description"
+        content="Confeitaria artesanal e açaí no Três Barras, em Contagem. Cheesecakes, tortinhas, sobremesas na taça, bolo no pote e açaí. Peça pelo WhatsApp.">
+    <meta property="og:title" content="Delícias da Flavi | Confeitaria e açaí em Contagem">
+    <meta property="og:description" content="Doces e açaí feitos com amor no Três Barras. Peça pelo WhatsApp.">
+    <meta property="og:image" content="https://toniizx.github.io/delicias-da-flavi/imagens/acai-montado.webp">
+    <meta property="og:url" content="https://toniizx.github.io/delicias-da-flavi/">
+    <link rel="canonical" href="https://toniizx.github.io/delicias-da-flavi/">
+    <meta name="theme-color" content="#FFF8F5">
+    <link rel="icon" href="imagens/mascote.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Nunito:wght@400;600;700;800&family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Bakery",
+        "name": "Delícias da Flavi - Confeitaria e Açaí",
+        "image": "https://toniizx.github.io/delicias-da-flavi/imagens/acai-montado.webp",
+        "url": "https://toniizx.github.io/delicias-da-flavi/",
+        "telephone": "+55 31 99842-0460",
+        "email": "deliciasdaflavieacai@gmail.com",
+        "servesCuisine": ["Confeitaria", "Açaí"],
+        "priceRange": "R$",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "R. Teobaldo José dos Santos, 420a - Três Barras",
+            "addressLocality": "Contagem",
+            "addressRegion": "MG",
+            "postalCode": "32041-100",
+            "addressCountry": "BR"
+        },
+        "openingHoursSpecification": [
+            { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "11:00", "closes": "19:00" },
+            { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "11:00", "closes": "18:00" }
+        ],
+        "paymentAccepted": "Dinheiro, cartão de débito, cartão de crédito, Pix",
+        "sameAs": ["https://www.instagram.com/deliciassdaflavi/"]
+    }
+    </script>
+</head>
+
+<body>
+    <a class="skip" href="#menu">Pular para o cardápio</a>
+
+    <!-- Topo -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <img src="imagens/mascote.png" alt="" width="40" height="49">
+                <span translate="no">Delícias da <em>Flavi</em></span>
+            </a>
+            <button class="burger" id="burger" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+            <nav class="nav-menu" id="nav-menu" aria-label="Principal">
+                <a href="#home" class="nav-link">Início</a>
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#menu" class="nav-link">Cardápio</a>
+                <a href="#location" class="nav-link">Localização</a>
+                <a href="https://deliciasdaflaviconfeitariaartesanaleacai.menulegal.app/" target="_blank" rel="noopener" class="btn btn-primary">Pedir agora</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Abertura -->
+    <section id="home" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <p class="hero-onde">Confeitaria e açaí no Três Barras, Contagem</p>
+                <h1>Feito com <span>amor</span></h1>
+                <p>Cheesecakes, tortinhas, sobremesas na taça, bolo no pote e açaí montado do seu jeito.</p>
+                <div class="hero-botoes">
+                    <a href="https://deliciasdaflaviconfeitariaartesanaleacai.menulegal.app/" target="_blank" rel="noopener" class="btn btn-gold">Ver cardápio e pedir</a>
+                    <a href="https://wa.me/5531998420460?text=Oi%2C%20Flavi!%20Quero%20fazer%20um%20pedido." target="_blank" rel="noopener" class="btn btn-outline">Chamar no WhatsApp</a>
+                </div>
+            </div>
+            <div class="hero-foto">
+                <img src="imagens/acai-montado.webp" width="900" height="900" fetchpriority="high" alt="Copo de açaí com granola, confetes, morangos e barras de chocolate, sobre mármore">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="about" class="section-padding about-section">
+        <div class="container about-container">
+            <div class="about-img reveal">
+                <img src="imagens/bolo-no-pote.webp" width="900" height="900" loading="lazy" alt="Três bolos no pote empilhados, com camadas de creme, recheio de maracujá, morango e chocolate">
+            </div>
+            <div class="about-text reveal">
+                <div class="section-head section-head--left">
+                    <h2>Nossa história</h2>
+                    <p class="sub">Confeitaria artesanal do bairro</p>
+                </div>
+                <p>
+                    A <strong>Delícias da Flavi</strong> é a confeitaria e açaí do Três Barras, em Contagem.
+                    Cada doce sai da cozinha da Flavi com o adesivo da casa e o capricho de quem faz para a vizinhança.
+                </p>
+                <p>
+                    Tem cheesecake e sobremesa na taça para a festa, bolo no pote e pudim para o dia a dia, e açaí
+                    montado do seu jeito, com os adicionais que você quiser.
+                </p>
+                <div class="about-fatos">
+                    <div>
+                        <h3>2 a 3&nbsp;dias</h3>
+                        <span>de antecedência para doces de festa</span>
+                    </div>
+                    <div>
+                        <h3>Entrega</h3>
+                        <span>ou retirada na loja</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cardápio -->
+    <section id="menu" class="section-padding menu-section">
+        <div class="container">
+            <div class="section-head reveal">
+                <h2>Cardápio</h2>
+                <p>Escolha uma categoria. Toque em <strong>Pedir</strong> para abrir o nosso cardápio digital, com entrega e formas de pagamento.</p>
+            </div>
+
+            <div class="menu-controls reveal" role="group" aria-label="Categorias">
+                <button type="button" class="menu-tab active" data-filter="all" aria-pressed="true">Todos</button>
+                <button type="button" class="menu-tab" data-filter="bolos" aria-pressed="false">Bolos e tortas</button>
+                <button type="button" class="menu-tab" data-filter="sobremesas" aria-pressed="false">Sobremesas</button>
+                <button type="button" class="menu-tab" data-filter="acai" aria-pressed="false">Açaí</button>
+            </div>
+
+            <div class="menu-grid" id="menu-grid">
+
+                <!-- Açaí -->
+                <article class="product-card product-card--destaque reveal" data-category="acai">
+                    <div class="card-img-container">
+                        <img src="imagens/acai-montado.webp" class="card-img" width="900" height="900" loading="lazy" alt="Copo de açaí com granola, confetes, morangos e barras de chocolate">
+                    </div>
+                    <div class="card-body">
+                        <span class="selo-card">Açaí montado</span>
+                        <h3 class="card-title">Açaí do seu jeito</h3>
+                        <p class="card-desc">Escolha o copo e capriche: granola, confete, Nutella, leite Ninho, morango, banana e mais.</p>
+                        <div class="card-footer">
+                            <span class="price"><small>a partir de</small> R$&nbsp;15,90</span>
+                            <a href="https://deliciasdaflaviconfeitariaartesanaleacai.menulegal.app/" target="_blank" rel="noopener" class="btn-card" aria-label="Pedir açaí no cardápio digital">Pedir <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Bolos e tortas -->
+                <article class="product-card reveal" data-category="bolos">
+                    <div class="card-img-container">
+                        <img src="imagens/cheesecake-travessa.webp" class="card-img" width="640" height="640" loading="lazy" alt="Cheesecake na travessa com geleia de frutas vermelhas e morangos">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Cheesecake na Travessa</h3>
+                        <p class="card-desc">Massa de baunilha, creme de cream cheese e geleia de frutas vermelhas. Até 12&nbsp;pessoas. Encomende com 3&nbsp;dias.</p>
+                        <div class="card-footer">
+                            <span class="price">R$&nbsp;149,90</span>
+                            <a href="https://deliciasdaflaviconfeitariaartesanaleacai.menulegal.app/" target="_blank" rel="noopener" class="btn-card" aria-label="Pedir Cheesecake na Travessa no cardápio digital">Pedir <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Sobremesas -->
+                <article class="product-card reveal" data-category="sobremesas">
+                    <div class="card-img-container">
+                        <img src="imagens/sobremesa-taca.webp" class="card-img" width="900" height="900" loading="lazy" alt="Sobremesa na taça de vidro com creme e morangos fatiados">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Sobremesa na Taça</h3>
+                        <p class="card-desc">Charmosa e irresistível, para o centro da mesa. Até 12&nbsp;pessoas. Encomende com 3&nbsp;dias.</p>
+                        <div class="card-footer">
+                            <span class="price">R$&nbsp;99,90</span>
+                            <a href="https://deliciasdaflaviconfeitariaartesanaleacai.menulegal.app/" target="_blank" rel="noopener" class="btn-card" aria-label="Pedir Sobremesa na Taça no cardápio digital">Pedir <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card reveal" data-category="sobremesas">
+                    <div class="card-img-container">
+                        <img src="imagens/bolo-no-pote.webp" class="card-img" width="900" height="900" loading="lazy" alt="Bolos no pote com camadas de creme e recheio">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Bolo no Pote</h3>
+                        <p class="card-desc">200&nbsp;ml de pão de ló com Ninho e chocolate, geleia de morango ou geleia de maracujá.</p>
+                        <div class="card-footer">
+                            <span class="price">R$&nbsp;13,00</span>
+                            <a href="https://deliciasdaflaviconfeitariaartesanaleacai.menulegal.app/" target="_blank" rel="noopener" class="btn-card" aria-label="Pedir Bolo no Pote no cardápio digital">Pedir <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card reveal" data-category="acai">
+                    <div class="card-img-container">
+                        <img src="imagens/acai-banana.webp" class="card-img" width="900" height="900" loading="lazy" alt="Copo de açaí com creme e rodelas de banana por cima">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Açaí Completo</h3>
+                        <p class="card-desc">Creme de açaí, leite em pó, leite condensado, banana ou morango. 300&nbsp;ml, 500&nbsp;ml ou 1&nbsp;litro.</p>
+                        <div class="card-footer">
+                            <span class="price">R$&nbsp;15,90</span>
+                            <a href="https://deliciasdaflaviconfeitariaartesanaleacai.menulegal.app/" target="_blank" rel="noopener" class="btn-card" aria-label="Pedir Açaí Completo no cardápio digital">Pedir <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card reveal" data-category="bolos">
+                    <div class="card-img-container">
+                        <img src="imagens/bolo-vulcao.webp" class="card-img" width="640" height="640" loading="lazy" alt="Bolo vulcão de chocolate com calda escorrendo, granulado e pérolas">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Bolo Vulcão de chocolate</h3>
+                        <p class="card-desc">Massa super fofinha coberta de calda de chocolate. Encomende com 2&nbsp;dias.</p>
+                        <div class="card-footer">
+                            <span class="price">R$&nbsp;65,00</span>
+                            <a href="https://deliciasdaflaviconfeitariaartesanaleacai.menulegal.app/" target="_blank" rel="noopener" class="btn-card" aria-label="Pedir Bolo Vulcão no cardápio digital">Pedir <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card reveal" data-category="bolos">
+                    <div class="card-img-container">
+                        <img src="imagens/tortinha.webp" class="card-img" width="640" height="640" loading="lazy" alt="Tortinha com cobertura de chantininho e gotas de chocolate">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Tortinha</h3>
+                        <p class="card-desc">Torta cremosa de pão de ló com cobertura de chantininho. Até 4&nbsp;pessoas. Encomende com 3&nbsp;dias.</p>
+                        <div class="card-footer">
+                            <span class="price">R$&nbsp;59,90</span>
+                            <a href="https://deliciasdaflaviconfeitariaartesanaleacai.menulegal.app/" target="_blank" rel="noopener" class="btn-card" aria-label="Pedir Tortinha no cardápio digital">Pedir <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Cardápio completo, em lista -->
+            <div class="menu-lista reveal">
+                <h3>Cardápio completo</h3>
+                <div class="menu-lista__grade">
+                    <div>
+                        <h4>Açaí</h4>
+                        <ul>
+                            <li><span>Completo <small>300&nbsp;ml · 500&nbsp;ml R$&nbsp;19,90 · 1&nbsp;L R$&nbsp;38,90</small></span><b>15,90</b></li>
+                            <li><span>Ostentação <small>com Nutella, KitKat, Bis, paçoca, confete e gotas · 500&nbsp;ml R$&nbsp;27,90 · 1&nbsp;L R$&nbsp;53,90</small></span><b>22,90</b></li>
+                            <li><span>Copão da Felicidade <small>Nutella, creme de Ninho, morango ou banana · 500&nbsp;ml R$&nbsp;25,90</small></span><b>21,90</b></li>
+                            <li><span>Puro <small>1&nbsp;litro</small></span><b>32,90</b></li>
+                            <li><span>Adicionais <small>paçoca 1 · Bis 2 · chantilly, gotas, granola 3 · confete, leite condensado 4 · Ovomaltine 5 · Ninho, Nutella 6</small></span><b></b></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Bolos e tortas <small>(encomenda)</small></h4>
+                        <ul>
+                            <li><span>Bolo Cheesecake com Frutas Vermelhas <small>até 12&nbsp;pessoas · até 28 R$&nbsp;249,90 · 3&nbsp;dias</small></span><b>149,90</b></li>
+                            <li><span>Cheesecake na Travessa <small>até 12&nbsp;pessoas · até 28 R$&nbsp;249,90 · 3&nbsp;dias</small></span><b>149,90</b></li>
+                            <li><span>Cheesecake na Taça <small>12 a 35&nbsp;pessoas, de R$&nbsp;149,90 a R$&nbsp;259,90 · 3&nbsp;dias</small></span><b>149,90</b></li>
+                            <li><span>Tortinha <small>até 4&nbsp;pessoas · 6 R$&nbsp;89,90 · 15 R$&nbsp;99,90 · 3&nbsp;dias</small></span><b>59,90</b></li>
+                            <li><span>Bolo Vulcão de chocolate <small>2&nbsp;dias</small></span><b>65,00</b></li>
+                            <li><span>Bento Cake <small>3&nbsp;dias</small></span><b>35,00</b></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Sobremesas e docinhos</h4>
+                        <ul>
+                            <li><span>Sobremesa na Taça <small>até 12&nbsp;pessoas · até 28 R$&nbsp;149,90 · 3&nbsp;dias</small></span><b>99,90</b></li>
+                            <li><span>Bolo no Pote <small>200&nbsp;ml</small></span><b>13,00</b></li>
+                            <li><span>Pudim de Ninho <small>500&nbsp;ml · 1&nbsp;L R$&nbsp;69,90</small></span><b>39,90</b></li>
+                            <li><span>Pudim de Leite Condensado <small>500&nbsp;ml · 1&nbsp;L R$&nbsp;59,90 · 2&nbsp;dias</small></span><b>29,90</b></li>
+                            <li><span>Mousse de limão ou maracujá <small>1&nbsp;L · 1,4&nbsp;L R$&nbsp;89,90 · 3&nbsp;dias</small></span><b>69,90</b></li>
+                            <li><span>Caixinha de Doces Gourmet <small>4&nbsp;unidades · 25 un. R$&nbsp;59,90 · 3&nbsp;dias</small></span><b>10,00</b></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu-lista__cta">
+                    <a href="https://deliciasdaflaviconfeitariaartesanaleacai.menulegal.app/" target="_blank" rel="noopener" class="btn btn-gold">Fazer meu pedido no cardápio digital</a>
+                    <p>Lá você escolhe, vê a taxa de entrega e paga com Pix, cartão ou dinheiro.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Avaliações reais do Google (perfil lido em 13/10/2026) -->
+    <section id="avaliacoes" class="section-padding reviews-section" aria-labelledby="t-aval">
+        <div class="container">
+            <div class="section-head reveal">
+                <h2 id="t-aval">O que dizem no Google</h2>
+                <p class="reviews-nota"><span class="estrelas" aria-hidden="true">★★★★★</span> <strong>5,0</strong> de média em 13&nbsp;avaliações</p>
+            </div>
+            <div class="reviews-grid">
+                <figure class="review reveal">
+                    <blockquote>“O melhor bolo no pote que já comi na vida, e o atendimento é mto bom, a Flavi é super atenciosa.”</blockquote>
+                    <figcaption>Hipromed Produtos Médicos</figcaption>
+                </figure>
+                <figure class="review reveal">
+                    <blockquote>“Tudo é maravilhoso, mas o bolo no pote ninho com chocolate para mim é o melhor.”</blockquote>
+                    <figcaption>Francisco A. A. Jr. Ribeiro</figcaption>
+                </figure>
+                <figure class="review reveal">
+                    <blockquote>“O melhor sorvete sem dúvidas, muito bom”</blockquote>
+                    <figcaption>Nathy Emanuelly</figcaption>
+                </figure>
+            </div>
+            <p class="reviews-link"><a href="https://www.google.com/maps/place/Del%C3%ADcias+da+Flavi+-+Confeitaria+e+A%C3%A7a%C3%AD/data=!4m2!3m1!1s0x0:0x965a2288cabb3cd9" target="_blank" rel="noopener">Ver todas as avaliações no Google</a></p>
+        </div>
+    </section>
+
+    <!-- Localização -->
+    <section id="location" class="section-padding contact-section">
+        <div class="container contact-grid">
+            <div class="contact-text reveal">
+                <h2>Venha nos visitar</h2>
+                <p class="contact-sub">Ou peça pelo WhatsApp e receba em casa.</p>
+
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                    <div>
+                        <h3>Endereço</h3>
+                        <p>R. Teobaldo José dos Santos, 420a<br>Três Barras, Contagem - MG</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-clock" aria-hidden="true"></i>
+                    <div>
+                        <h3>Horário</h3>
+                        <p>Terça a sábado, 11h às 19h<br>Domingos e feriados, 11h às 18h</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-credit-card" aria-hidden="true"></i>
+                    <div>
+                        <h3>Pagamento</h3>
+                        <p>Pix, cartão de débito e crédito ou dinheiro</p>
+                    </div>
+                </div>
+
+                <a href="https://wa.me/5531998420460?text=Oi%2C%20Flavi!%20Quero%20fazer%20um%20pedido." target="_blank" rel="noopener" class="btn btn-gold btn-full">
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i> Chamar no WhatsApp
+                </a>
+            </div>
+
+            <div class="map-wrapper reveal">
+                <iframe class="map-frame" title="Mapa da Delícias da Flavi" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    src="https://maps.google.com/maps?q=R.%20Teobaldo%20Jos%C3%A9%20dos%20Santos%2C%20420a%2C%20Contagem%20-%20MG&amp;z=16&amp;output=embed"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p class="footer-nome" translate="no">Delícias da <em>Flavi</em></p>
+            <p>Confeitaria e Açaí · Três Barras, Contagem - MG · (31) 99842-0460</p>
+            <p class="footer-ano">© 2026 Delícias da Flavi</p>
+            <div class="footer-redes">
+                <a href="https://www.instagram.com/deliciassdaflavi/" target="_blank" rel="noopener" aria-label="Instagram @deliciassdaflavi"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://wa.me/5531998420460" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <a class="zap-fixo" href="https://wa.me/5531998420460?text=Oi%2C%20Flavi!%20Quero%20fazer%20um%20pedido." target="_blank" rel="noopener" aria-label="Pedir pelo WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
