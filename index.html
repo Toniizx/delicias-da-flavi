@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delícias da Flavi | Confeitaria e açaí em Contagem</title>
     <meta name="description"
-        content="Confeitaria artesanal e açaí no Três Barras, em Contagem. Cheesecakes, tortinhas, sobremesas na taça, bolo no pote e açaí. Peça pelo WhatsApp.">
+        content="Festival de Fatias da Delícias da Flavi: próximas datas e locais em Contagem. Confeitaria artesanal e açaí no Três Barras. Cheesecakes, tortinhas, sobremesas na taça, bolo no pote e açaí. Peça pelo WhatsApp.">
     <meta property="og:title" content="Delícias da Flavi | Confeitaria e açaí em Contagem">
     <meta property="og:description" content="Doces e açaí feitos com amor no Três Barras. Peça pelo WhatsApp.">
     <meta property="og:image" content="https://toniizx.github.io/delicias-da-flavi/imagens/acai-montado.webp">
@@ -63,6 +63,7 @@
             </button>
             <nav class="nav-menu" id="nav-menu" aria-label="Principal">
                 <a href="#home" class="nav-link">Início</a>
+                <a href="#festival" class="nav-link">Festival</a>
                 <a href="#about" class="nav-link">Sobre</a>
                 <a href="#menu" class="nav-link">Cardápio</a>
                 <a href="#location" class="nav-link">Localização</a>
@@ -75,6 +76,7 @@
     <section id="home" class="hero">
         <div class="container hero-grid">
             <div class="hero-content">
+                <a class="hero-festival" href="#festival"><span class="hero-festival__selo">Festival de Fatias</span> <span data-proximo-festival>Veja as próximas datas</span> <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                 <p class="hero-onde">Confeitaria e açaí no Três Barras, Contagem</p>
                 <h1>Feito com <span>amor</span></h1>
                 <p>Cheesecakes, tortinhas, sobremesas na taça, bolo no pote e açaí montado do seu jeito.</p>
@@ -86,6 +88,44 @@
             <div class="hero-foto">
                 <img src="imagens/acai-montado.webp" width="900" height="900" fetchpriority="high" alt="Copo de açaí com granola, confetes, morangos e barras de chocolate, sobre mármore">
             </div>
+        </div>
+    </section>
+
+    <!-- Festival de Fatias: para cada nova data, copie um <article class="evento"> e troque data-fim (último dia, AAAA-MM-DD) e os textos. Datas passadas somem sozinhas. -->
+    <section id="festival" class="section-padding festival-section" aria-labelledby="t-festival">
+        <div class="container">
+            <div class="section-head reveal">
+                <p class="festival-kicker">Fatias fresquinhas, vários sabores</p>
+                <h2 id="t-festival">Festival de Fatias</h2>
+                <p>A Flavi leva as fatias para feiras e eventos de Contagem. Veja onde vai ser o próximo e chame a família.</p>
+            </div>
+
+            <div class="eventos">
+                <article class="evento reveal" data-fim="2026-10-18" data-resumo="17 e 18/10 na Feira da Fartura">
+                    <div class="evento-data" aria-hidden="true">
+                        <span class="evento-dias">17 e 18</span>
+                        <span class="evento-mes">outubro</span>
+                    </div>
+                    <div class="evento-info">
+                        <p class="evento-quando">Sábado e domingo, a partir das 9h</p>
+                        <h3>Feira da Fartura</h3>
+                        <p class="evento-onde"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Rua Joaquim José, 1205, Fonte Grande, Contagem</p>
+                        <div class="evento-botoes">
+                            <a class="btn btn-gold" href="https://www.google.com/maps/search/?api=1&amp;query=Rua%20Joaquim%20Jos%C3%A9%2C%201205%2C%20Fonte%20Grande%2C%20Contagem%20-%20MG" target="_blank" rel="noopener"><i class="fas fa-route" aria-hidden="true"></i> Como chegar</a>
+                            <a class="btn btn-outline" href="https://www.instagram.com/feiraodafartura/" target="_blank" rel="noopener">Ver a feira</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="eventos-vazio reveal" hidden>
+                <h3>Novas datas em breve</h3>
+                <p>Ainda não marcamos o próximo festival. Chame no WhatsApp para ser avisado.</p>
+            </div>
+
+            <p class="festival-aviso reveal">
+                <a href="https://wa.me/5531998420460?text=Oi%2C%20Flavi!%20Quero%20ser%20avisado%20do%20pr%C3%B3ximo%20Festival%20de%20Fatias." target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i> Quero ser avisado dos próximos festivais</a>
+            </p>
         </div>
     </section>
 

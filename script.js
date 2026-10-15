@@ -1,4 +1,4 @@
-// Menu do celular, topo ao rolar, filtro do cardápio e animações ao aparecer.
+// Menu do celular, datas do festival, topo ao rolar, filtro do cardápio e animações ao aparecer.
 document.documentElement.classList.remove('sem-js');
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -23,6 +23,15 @@ document.addEventListener('DOMContentLoaded', () => {
         icone.classList.toggle('fa-times', aberto);
     });
     navMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', fecharMenu));
+
+    // Festival: esconde as datas que já passaram e mostra a próxima no topo
+    const hoje = new Date().toLocaleDateString('sv-SE'); // AAAA-MM-DD no fuso do visitante
+    const eventos = [...document.querySelectorAll('.evento')];
+    eventos.forEach(ev => { if (ev.dataset.fim < hoje) ev.remove(); });
+    const proximo = document.querySelector('.evento');
+    const chamada = document.querySelector('[data-proximo-festival]');
+    if (proximo && chamada) chamada.textContent = proximo.dataset.resumo;
+    if (!proximo) document.querySelector('.eventos-vazio').hidden = false;
 
     // Topo mais sólido depois de rolar
     const navbar = document.getElementById('navbar');

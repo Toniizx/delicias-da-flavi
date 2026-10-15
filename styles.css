@@ -162,7 +162,7 @@ a { text-decoration: none; color: inherit; transition: color .25s ease; }
 .menu-lista li { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding: .7rem 0; border-bottom: 1px dashed var(--color-divider); }
 .menu-lista li span { font-weight: 700; color: var(--color-primary); }
 .menu-lista li small { display: block; font-weight: 400; font-size: .85rem; color: var(--color-text-muted); }
-.menu-lista li b { color: var(--color-accent-dark); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.menu-lista li b { color: var(--color-accent-dark); white-space: nowrap; font-variant-numeric: lining-nums tabular-nums; }
 
 .menu-lista__cta { margin-top: 2.2rem; text-align: center; }
 .menu-lista__cta p { margin-top: .8rem; font-size: .92rem; color: var(--color-text-muted); }
@@ -272,4 +272,52 @@ footer { background: var(--color-primary); padding: 3rem 0 6rem; text-align: cen
     .map-frame { height: 320px; }
     .reviews-grid { grid-template-columns: 1fr; }
     .review:first-child blockquote { font-size: 1.45rem; }
+}
+
+/* Festival de Fatias */
+.hero-festival {
+    display: inline-flex; align-items: center; gap: .6rem; flex-wrap: wrap; margin-bottom: 1.2rem;
+    padding: .45rem .9rem .45rem .45rem; border-radius: var(--radius-pill);
+    background: #fff; box-shadow: var(--shadow-card); color: var(--color-primary); font-weight: 700; font-size: .95rem;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+.hero-festival:hover { transform: translateY(-2px); box-shadow: var(--shadow-float); }
+.hero-festival__selo { background: var(--color-accent-dark); color: #fff; padding: .35rem .75rem; border-radius: var(--radius-pill); font-size: .8rem; font-weight: 800; letter-spacing: .3px; }
+.hero-festival i { color: var(--color-accent-dark); font-size: .8rem; }
+
+.festival-section { background: var(--color-primary); color: #fff; position: relative; overflow: hidden; }
+.festival-section::before { content: ''; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(55% 60% at 90% 0%, rgba(212, 92, 94, .35) 0%, rgba(212, 92, 94, 0) 70%), radial-gradient(45% 50% at 0% 100%, rgba(201, 161, 91, .22) 0%, rgba(201, 161, 91, 0) 70%); }
+.festival-section .container { position: relative; }
+.festival-section .section-head h2 { color: #fff; }
+.festival-section .section-head p { color: rgba(255, 255, 255, .78); }
+.festival-section .section-head .festival-kicker { margin: 0 auto .4rem; font: 400 1.7rem/1.2 var(--font-script); color: #F4A9AA; }
+
+.eventos { display: grid; gap: 1.5rem; max-width: 860px; margin: 0 auto; }
+.evento { display: grid; grid-template-columns: auto 1fr; gap: 2rem; align-items: center; background: #fff; color: var(--color-text-main); border-radius: var(--radius-lg); padding: 2rem; box-shadow: var(--shadow-float); }
+.evento-data { display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 9.5rem; padding: 1.4rem 1rem; border-radius: var(--radius-md); background: var(--color-blush); text-align: center; }
+.evento-dias { font: 700 2.8rem/1 var(--font-heading); color: var(--color-accent-dark); font-variant-numeric: lining-nums tabular-nums; }
+.evento-mes { margin-top: .3rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; font-size: .8rem; color: var(--color-primary); }
+.evento-quando { font-weight: 800; color: var(--color-accent-dark); margin-bottom: .2rem; }
+.evento h3 { font-size: 2.2rem; margin-bottom: .5rem; }
+.evento-onde { color: var(--color-text-muted); margin-bottom: 1.3rem; }
+.evento-onde i { color: var(--color-accent); margin-right: .3rem; }
+.evento-botoes { display: flex; gap: .8rem; flex-wrap: wrap; }
+.evento-botoes .btn { padding: .85rem 1.6rem; }
+
+.eventos-vazio { max-width: 640px; margin: 0 auto; text-align: center; background: rgba(255, 255, 255, .08); border: 1px solid rgba(255, 255, 255, .2); border-radius: var(--radius-lg); padding: 2rem; }
+.eventos-vazio h3 { color: #fff; font-size: 2rem; margin-bottom: .4rem; }
+.eventos-vazio p { color: rgba(255, 255, 255, .8); }
+.eventos-vazio[hidden] { display: none; }
+
+.festival-aviso { text-align: center; margin-top: 2rem; }
+.festival-aviso a { display: inline-flex; align-items: center; gap: .5rem; min-height: 44px; font-weight: 800; color: #fff; border-bottom: 2px solid #F4A9AA; padding-bottom: .1rem; }
+.festival-aviso a:hover { color: #F4A9AA; }
+
+@media (max-width: 768px) {
+    .hero-festival { justify-content: center; text-align: center; }
+    .evento { grid-template-columns: 1fr; gap: 1.2rem; padding: 1.4rem; text-align: center; }
+    .evento-data { min-width: 0; padding: 1rem; }
+    .evento h3 { font-size: 1.9rem; }
+    .evento-botoes { justify-content: center; }
+    .evento-botoes .btn { flex: 1 1 100%; }
 }
